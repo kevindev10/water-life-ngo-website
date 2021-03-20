@@ -29,7 +29,13 @@ function Navbar() {
 		}
 	}
 
-	
+	/*//////////////////////////////////////////////////////////////////////////*/
+
+	const extendElement = () => {
+	  dropdown ? setDropdown(false) : setDropdown(true);
+	}
+
+	/*//////////////////////////////////////////////////////////////////////////*/
 
   return (
 	<div>
@@ -48,11 +54,11 @@ function Navbar() {
 			 		</Link>
 			 	</li>
 
-			 	<li className ='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-			 		<Link  to='/about' className='nav-links' onClick ={closeMobileMenu}>
+			 	<li className ='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={extendElement}>
+			 		<Link  to='/about' className='nav-links' >
 			 			About <i className='fas fa-caret-down'/>
 			 		</Link>
-			 		{dropdown && <Dropdown/>}
+			 		{dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>}
 			 	</li>
 
 			 	<li className='nav-item'>
@@ -62,16 +68,22 @@ function Navbar() {
 	          </li>
 
 			 	<li className ='nav-item'>
-			 		<Link  to='/contact' className='nav-links' onClick ={closeMobileMenu}>
-			 			Contact Us Now !
+			 		<Link  to='/get-involved' className='nav-links' onClick ={closeMobileMenu}>
+			 			Get Involved
+			 		</Link>
+			 	</li>	
+			 	<li className ='nav-item'>
+			 		<Link  to='/blog' className='nav-links' onClick ={closeMobileMenu}>
+			 			Blog
 			 		</Link>
 			 	</li>	
 
 			 	<li className ='nav-item'>
-			 		<Link exact to='/sign-up' className='nav-links-mobile' onClick ={closeMobileMenu}>
-			 			Sign Up
+			 		<Link exact to='/donate' className='nav-links-mobile' onClick ={closeMobileMenu}>
+			 			Donate
 			 		</Link>
 			 	</li>
+			 	
 
 		 	</ul>
 		 	<Button/>
