@@ -79,9 +79,9 @@ function Navbar() {
 			 	</li>	
 
 			 	<li className ='nav-item'>
-			 		<Link exact to='/donate' className='nav-links-mobile' onClick ={closeMobileMenu}>
+			 		<a href='https://support.patreon.com/hc/en-us/articles/360004304332-Can-nonprofit-organizations-use-Patreon-' target="_blank" rel="noopener noreferrer" className='nav-links-mobile' onClick ={closeMobileMenu}>
 			 			Donate
-			 		</Link>
+			 		</a>
 			 	</li>
 			 	
 

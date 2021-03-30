@@ -1,7 +1,7 @@
 export const MenuItems = [
 	{
 		title :'Our Approach',
-		path:'/our-approach',
+		path:'/about',
 		cName:'dropdown-link'
 
 	},
@@ -26,16 +26,11 @@ export const MenuItems = [
 	},
 	{
 		title :'FAQ',
-		path:'/faq',
+		path:'/FAQ',
 		cName:'dropdown-link'
 
 	},
-	{
-		title :'Downlaodable Materials',
-		path:'/downloads',
-		cName:'dropdown-link'
-
-	},
+	
 	
 
 ];

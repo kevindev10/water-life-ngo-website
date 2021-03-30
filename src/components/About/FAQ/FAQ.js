@@ -1,254 +1,39 @@
 import React from 'react';
-import banner from './banner.jpeg';
-import './Home.css';
-import fullBleedBackground from './full-bleed-background.jpg';
-import cardImg1 from "./cardImg1.jpg"
-import cardImg2 from "./cardImg2.jpg"
-import cardImg3 from "./cardImg3.png"
-import bottomImg1 from	'./bottomImg1.jpg'
-import bottomImg2 from	'./bottomImg2.jpg'
-import bottomBanner from './bottomBanner.jpg';
+import banner from './banner.jpg';
 
-function Home() {
+function FAQ() {
   return (
-    <div className=" tc">
-       
-       <div>
+    <div className="tc ">
+        <div>
 				<div className ='spacer '></div>
 				<img className ='banner' src ={banner} alt=''/>
 		</div>
 
-		<div className='pa5 skip-on-mobile'>
-		</div>
+		 <div className=' pb4 tc' >
+        	 <h1 className='f1 black fw8  ' >FREQUENTLY ASKED QUESTIONS</h1>
+         </div>
 
-		<div>
-			<article data-name="article-full-bleed-background">
-			  <div className="cf" style ={{ backgroundImage: "url("+fullBleedBackground+")" }}>
-			    <div className="f2  bg-white black-70 measure-narrow f3 pt0 pl4 pb4 pr4 ">
-			      <header className="bb b--black-70 pt0 pb4">
-			        <h3 className="f3 fw7 ttu tracked lh-title mt0 mb3  ttu">THE unifié CAMPAIGN 2021</h3>
-			        <h4 className="f4 fw4 i lh-title mt0 ttu mb1">République centrafricaine</h4>
-			      </header>
-			      <section className="pt4 pb4 ml0  ">
-			        <p className="times lh-copy measure mt0  " style={{"font-size":"17px"}}>
-			          Unifié, or unified, is how we’re approaching the next year.
-			          Together, we can raise support for clean water projects in new communities. Together,
-			          we can come alongside communities to ensure water continues to flow for families who need it.
-			         </p><br/>
-			        <p className="times lh-copy measure mt0 tc " style={{"font-size":"17px"}}>  
-			          In 2021, our team in the Central African Republic has a lot of work to do! We've received more 
-			          invitations to work in communities than we have the capacity for, so we've launched this 
-			          fundraising campaign to help.
-			         </p><br/> 
-			        <p className="times lh-copy measure mt0 tc " style={{"font-size":"17px"}}>  
-			          Our plan to address the global water crisis is to work alongside communities to repair water systems, 
-			          implement new water systems,  and to build capacity in local communities through a variety of long term 
-			          programs, including:
-			        </p><br/>  
-			         <ul  className='ml5' style={{"font-size":"17px"}}>
-			         	<li className='athelas '>
-			         		System mapping using drone imagery
-			         	</li>
-			         	<li className='athelas '>
-			         		Water committee development
-			         	</li>
-			         	<li className='athelas'>
-			         		Access point remote monitoring
-			         	</li>
-			         	
-			         </ul>
+         <div className='  ' >
+			<h2 className='mb4 f3 main-heading-mobile'>WHY WATER?</h2>
+			<p className='mb4 gray f4 ph2 sub-heading-mobile'>We believe water is a basic, foundational human right. It also has the power to change everything for those who lack it. </p>
 
-			        
-					<button style={{ "border-color":"#44c8e8","padding-top":"11px"  }} className=' button pa3 ma4 shadow-5 br4 w-50 pointer bg-white'><a href='https://support.patreon.com/hc/en-us/articles/360004304332-Can-nonprofit-organizations-use-Patreon-' target="_blank" rel="noopener noreferrer" style={{"color":"#44c8e8"}} className=' button-text no-underline f5 fw6 '>GIVE TODAY</a></button>			        
-			      </section>
-			    </div>
-			  </div>
-			</article>
+			<h2 className='mb4 f3 main-heading-mobile'>HOW MUCH OF MY DONATION GOES TO CLEAN WATER AND HOW DOES THE 100% MODEL WORK?</h2>
+			<p className='mb4 gray f4 ph3 sub-heading-mobile '>We fundraise for our operational costs separately. Because of this model, we can assure donors that 100% of all monetary donations go directly to our clean water programs in The Central African Republic.</p>
 
-		</div>
-		<div>
-			<div className=" f2  bg-white black-70  f3 pt4 pl4 pr4 mobile-only">
-			      <header className="bb b--black-70 pt0 pb4">
-			        <h3 className="f4 fw7 ttu tracked lh-title mt0 mb3  ttu">THE unifié CAMPAIGN 2021</h3>
-			        <h4 className="f5 fw4 i lh-title mt0 ttu mb1">République centrafricaine</h4>
-			      </header>
-			      <section className="pt4 pb4   ">
-			        <p className="times lh-copy  mt0  " style={{"font-size":"14px"}}>
-			          Unifié, or unified, is how we’re approaching the next year.
-			          Together, we can raise support for clean water projects in new communities. Together,
-			          we can come alongside communities to ensure water continues to flow for families who need it.
-			         </p><br/>
-			        <p className="times lh-copy e mt0 tc " style={{"font-size":"14px"}}>  
-			          In 2021, our team in the Central African Republic has a lot of work to do! We've received more 
-			          invitations to work in communities than we have the capacity for, so we've launched this 
-			          fundraising campaign to help.
-			         </p><br/> 
-			        <p className="times lh-copy  mt0 tc " style={{"font-size":"14px"}}>  
-			          Our plan to address the global water crisis is to work alongside communities to repair water systems, 
-			          implement new water systems,  and to build capacity in local communities through a variety of long term 
-			          programs, including:
-			        </p><br/>  
-			         <ul  className='ml4' style={{"font-size":"14px"}}>
-			         	<li className='athelas '>
-			         		System mapping using drone imagery
-			         	</li>
-			         	<li className='athelas '>
-			         		Water committee development
-			         	</li>
-			         	<li className='athelas'>
-			         		Access point remote monitoring
-			         	</li>
-			         	
-			         </ul>
+			<h2 className='mb4 f3 main-heading-mobile'>WHERE ARE YOU LOCATED?</h2>
+			<p className='mb4 gray f4 ph3 sub-heading-mobile'>We currently don’t have a central office. Contact us if you need an address for a donation. </p>
+			
+			<h2 className='mb4 f3 main-heading-mobile'>IS WATER LIFE A 501(C)(3), TAX-EXEMPT NONPROFIT ORGANIZATION?</h2>
+			<p className='mb4 gray f4 ph2 sub-heading-mobile'>Yes, donations to Water Life are tax-deductible. </p>
 
-			        <div className='button-mobile-positioning'>
-					<button style={{ "border-color":"#44c8e8","padding-top":"11px"  }} className=' button   button-mobile pa3 ma4 shadow-5 br4 w-50 pointer bg-white'><a href='https://support.patreon.com/hc/en-us/articles/360004304332-Can-nonprofit-organizations-use-Patreon-' target="_blank" rel="noopener noreferrer" style={{"color":"#44c8e8"}} className=' button-text no-underline f5 fw6 ' >GIVE TODAY</a></button>	
-					</div>
-			      </section>
-			    </div>
+			<h2 className='mb4 f3 main-heading-mobile'>WHAT IS THE MISSION STATEMENT OF  WATER LIFE?</h2>
+			<p className='mb4 gray f4 ph2 sub-heading-mobile '> Water Life is dedicated to alleviating water poverty to bring hope to impoverished communities in The Central African Republic. </p>
 
-		</div>
-
-		<div className=' ph6 pb5 bottom-border-mobile-main' style={{ "justify-content":"center"}}>
-			<p className="bb pt3 pb5 bottom-border-mobile " style={{ "border-color":"#BDC7CA"}}>
-		        
-			</p>
 			
 		</div>
-		<div>
-			<p className='f3 mh5 ph5 fw8 main-heading-mobile'>
-				CLEAN DRINKING WATER BRINGS WITH IT POWERFUL TRANSFORMATION TO BRING COMMUNITIES OUT OF POVERTY.
-			</p>
-			<p  className='f5 mv4 fw6 sub-heading-mobile'>
-				663 million people around the world don't have safe water to drink. We're committed to making that a fact of history. 
-			</p>				
-		</div>
 
-		<div className='cardz ma1 pa3 mb3 main-cardz-on-mobile ' > 
-			<article className="br2 ba dark-gray b--black-10 mv4  w-30  ma3 shadow-5 cardz-on-mobile">
-			  <img src={cardImg1} width='400' height='320' className="db w-100 br2 br--top card-img-size card-photo-mobile " alt=" COMMUNITY FOCUSED."/>
-			  <div className="pa2 ph3-ns pb3-ns">
-			    <div className="dt w-100 mt1">
-			      <div className="dtc">
-			        <h1 className="f5 f4-ns mv0">COMMUNITY FOCUSED</h1>
-			      </div>
-			      
-			    </div>
-			    <p className="f6 lh-copy measure mt2 mid-gray ">
-			      By implementing programs that empower the 
-			      people who are served by them, we are able
-			      to foster an environment of ownership, worth, 
-			      and dignity. The community becomes invested in
-    		      the project, helping the system continue to 
-			      function for years.
-			      
-			    </p>
-			  </div>
-			</article>
 
-			<article className="br2 ba dark-gray b--black-10 mv4 w-30   ma3 shadow-5 cardz-on-mobile" >
-			  <img src={cardImg2} width='400' height='320' className="db w-100 br2 br--top card-img-size card-photo-mobile" alt=" LONG TERM SOLUTIONS."/>
-			  <div className="pa2 ph3-ns pb3-ns">
-			    <div className="dt w-100 mt1">
-			      <div className="dtc">
-			        <h1 className="f5 f4-ns mv0">LONG TERM SOLUTIONS</h1>
-			      </div>
-			      
-			    </div>
-			    <p className="f6 lh-copy measure mt2 mid-gray">
-			      We're committed to solutions that will withstand 
-			      the test of time. By partnering with organizations
-			      on the ground we're always available if something 
-			      goes wrong, we're able to select culturally appropriate
-        		  technologies, and set up maintenance plans in every
-			      community - making sure clean water continues to 
-			      flow for years.
-			    </p>
-			  </div>
-			</article>
-
-			<article className="br2 ba dark-gray b--black-10 mv4 w-30  ma3 shadow-5 cardz-on-mobile">
-			  <img src={cardImg3} width='400' height='320' className="db w-100 br2 br--top card-img-size card-photo-mobile" alt=" PROVING 100%."/>
-			  <div className="pa2 ph3-ns pb3-ns">
-			    <div className="dt w-100 mt1">
-			      <div className="dtc">
-			        <h1 className="f5 f4-ns mv0">PROVING 100%</h1>
-			      </div>
-			      
-			    </div>
-			    <p className="f6 lh-copy measure mt2 mid-gray">
-			       100% of every general donation to Water 
-			       Life goes straight to the field to benefit
-			       those who need it most. In addition, we strive 
-			       to show our donors exactly where their support
-			       went through GPS mapping, photos and stories 
-			       from the field, as well as individual project
-			       reports.
-			    </p>
-			  </div>
-			</article>
-		</div>
-
-		<div className=''>
-			<section className="mw8 random " style={{"margin-right":"auto", "margin-left":"auto"}}>
-			  
-			  <article className="bt bb b--black-10">
-			    <div className="db pv5 ph3 ph0-l no-underline black  overall-main-bottom-img1-mobile" >
-			      <div className="flex flex-column flex-row-ns main-bottom-img1-mobile">
-			        <div className="pr3-ns mb4 mb0-ns w-100 w-100-ns bottom-img1-mobile">
-			          <img src={bottomImg1} width='500px' height='330px'  className="db br2 shadow-5 bottom-images actual-bottom-img1-mobile" alt=" bottom pic 1."/>
-			        </div>
-			        <div className="w-100 w-100-ns pl3-ns">
-			          <h1 className="f3 fw1 mt0 lh-title">CREATE LASTING GLOBAL CHANGE: INVEST IN LONG TERM IMPACT</h1>
-			          <p className="f6 f5-l lh-copy">
-			            We can't imagine living without clean water, and think everyone on our planet deserves access to life's most 
-			            basic needs. We implement simple, sustainable technologies suited to the needs of each community we partner
-			            alongside. 
-			          </p>
-			          <p className="f6 f5-l lh-copy">
-			            Supporting Water Lifer means investing in long term global impact. Monthly giving is a great way to contribute 
-			            to the sustainability of our projects.
-			          </p>
-			          <button style={{ "border-color":"#44c8e8","padding-top":"11px"  }} className=' button pa3 ma4 shadow-5 br4 w-70 pointer bg-white'><a href='https://support.patreon.com/hc/en-us/articles/360004304332-Can-nonprofit-organizations-use-Patreon-' target="_blank" rel="noopener noreferrer" style={{"color":"#44c8e8"}} className=' button-text no-underline f5 fw6 '>Donate Monthly</a></button>
-			        </div>
-			      </div>
-			    </div>
-			  </article>
-			 
-			</section>
-		</div>
-
-		<div className='mb5'>
-			
-			<img className ='bottom-banner' src ={bottomBanner} alt=''/>
-	   </div>
-
-	   <div>
-	   		<section className="mw8 random center ">
-			  
-			  <article className="pv5 bt bb b--black-10 ph3 ph0-l">
-			    <div className="flex flex-column flex-row-ns main-bottom-img1-mobile">
-			      <div className="w-100 w-100-ns pr3-ns order-2 order-1-ns">
-			        <h1 className="f3  fw1 mt0 lh-title">ACCESS TO CLEAN WATER CHANGES EVERYTHING</h1>
-			        <p className="f6 f5-l lh-copy">
-			            With access to clean water comes drastically improved health, children who can spend more time
-			             in school, women who can get jobs and take care of their families, communities with greater 
-			             access to food, and the growth of local economies.
-			          </p>
-			          
-			          <button style={{ "border-color":"#44c8e8","padding-top":"11px"  }} className=' button pa3 ma4 shadow-5 br4 w-70 pointer bg-white'><a href='https://support.patreon.com/hc/en-us/articles/360004304332-Can-nonprofit-organizations-use-Patreon-' target="_blank" rel="noopener noreferrer" style={{"color":"#44c8e8"}} className=' button-text no-underline f5 fw6 '>LEARN MORE</a></button>
-			      </div>
-			      <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-100-ns bottom-img1-mobile">
-			        <img src={bottomImg2} width='500px' height='260px' class="db br2 shadow-5 bottom-images actual-bottom-img1-mobile" alt=" bottom pic 2."/>
-			      </div>
-			    </div>
-			    
-			  </article>
-			  
-			</section>
-	   </div>
-
-	   <div className='mt0 footer'>
+		 <div className='mt6 footer'>
 	   		<footer className="bg-near-black white-80 pt4   ph4 ">
 	   		<div>
 	   			<div className="pt0 pb2 ph3 ph5-ns tc">
@@ -283,7 +68,7 @@ function Home() {
 				  
 				</div>
 
-				<div className='ma2 pa4'>
+				<div className='ma2 pa4 tc'>
 										
 					<h1 className='f3 mb4' >SUBSCRIBE</h1>
 
@@ -307,15 +92,14 @@ function Home() {
 			    <a className="link white-80 hover-silver grow lost   " href='./'>info@waterlife.com </a>
 			    
 			  </p>
-			  	<p  className="f3 mt4"><span className=" ">©2021 Water Life.</span></p>
+			  	<p  className="f3 mt4 tc"><span className=" ">©2021 Water Life.</span></p>
 			 </div>
 			</footer>
 	   </div>
-
 
 
     </div>
   );
 }
 
-export default Home;
+export default FAQ;
