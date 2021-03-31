@@ -12,7 +12,9 @@ import About from './components/About/About';
     import FAQ from './components/About/FAQ/FAQ';
 
 
-import CleanWater from './components/CleanWater/CleanWater'
+import CleanWater from './components/CleanWater/CleanWater';
+import GetInvolved from './components/GetInvolved/GetInvolved';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -40,6 +42,12 @@ function App() {
               </Route>
           <Route path ='/clean-water'>
             <CleanWater/>
+          </Route>
+          <Route path ='/get-involved'>
+            <GetInvolved/>
+          </Route>
+          <Route path ='/blog'>
+            <Blog/>
           </Route>
 
         </Switch>

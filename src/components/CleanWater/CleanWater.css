@@ -1,0 +1,13 @@
+@media screen and (max-width: 960px){
+	.youtube-main{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.youtube{
+
+		width:96% ;
+		height:350px !important;
+		
+	}
+}

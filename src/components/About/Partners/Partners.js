@@ -25,6 +25,10 @@ function Partners() {
     	  	 necessary for bringing communities long-term clean water solutions.</p>
     	  </div>
 
+    	  <div className='tc'>
+    	  	<h4 className='pv4 f3 main-heading-mobile'>BECOME A PARTNER</h4>
+    	  </div>
+
     	  <div className='ph5 mh5 pv2 partner-form-on-mobile'>
     	  	<div class="container">
 			  <form action="action_page.php">
