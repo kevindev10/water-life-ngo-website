@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import Button from '../Button/Button';
 import{Link} from 'react-router-dom';
-import Dropdown from '../Dropdown/Dropdown'
+import Dropdown from '../Dropdown/Dropdown';
+import logo from './water-life-logo.png';
 
 import './Navbar.css';
 
@@ -40,10 +41,19 @@ function Navbar() {
   return (
 	<div>
 		 <nav className='navbar'>
-		 	<Link exact to ='/' className='navbar-logo'>
+		 	
+		 	<Link exact to ='/' className='navbar-logo '>
+		 		
 		 		WATER LIFE 
+		 		<>
+		 			<img src={logo} width="35px" height="35px" alt="company-logo" className="company-logo-mobile  "/>	
+		 		</>	
+
 		 	</Link>
-		 	<div className='menu-icon' onClick ={handleClick} >
+		 	<img src={logo} width="35px" height="35px" alt="company-logo" className="company-logo-desktop pl2 "/>
+
+
+		 	<div className='menu-icon ' onClick ={handleClick} >
 		 		<i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
 		 	</div>
 		 	<ul className={click ? 'nav-menu active' : 'nav-menu'}>

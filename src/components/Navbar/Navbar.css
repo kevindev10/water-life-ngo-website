@@ -10,7 +10,7 @@
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 20px ;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -27,7 +27,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 65vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -61,6 +61,13 @@
 .menu-icon {
   display: none;
 }
+
+@media screen and (min-width: 961px){
+  .company-logo-mobile{
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -104,6 +111,13 @@
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+  }
+  .company-logo-mobile{
+    margin-bottom: -5px;
+   
+  }
+  .company-logo-desktop{
+   display: none;
   }
 
   .menu-icon {
