@@ -11,7 +11,6 @@ import About from './components/About/About';
     import Contact from './components/About/Contact/Contact'; 
     import FAQ from './components/About/FAQ/FAQ';
 
-
 import CleanWater from './components/CleanWater/CleanWater';
 import GetInvolved from './components/GetInvolved/GetInvolved';
 import Blog from './components/Blog/Blog';
